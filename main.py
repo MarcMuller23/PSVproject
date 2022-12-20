@@ -8,7 +8,7 @@ rfid = SimpleMFRC522()
 
 while True:
     id, text = rfid.read()
-    viewer = subprocess.Popen('display.py')
+    viewer = subprocess.Popen(['python3','/home/marc/Documents/PSVproject/viewer.py'])
     print(id)
     print(text)
     time.sleep(10)

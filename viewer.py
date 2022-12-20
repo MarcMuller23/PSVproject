@@ -1,6 +1,9 @@
-from skimage.viewer import ImageViewer
-from skimage.io import imread
+from PIL import Image
+import time
 
-img = imread('data.jpeg')  # path to IMG
-view = ImageViewer(img)
-view.show()
+value = True
+while value:    
+    im = Image.open('data.jpeg')
+    im.show()
+    time.sleep(10)
+    value= False
